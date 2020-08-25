@@ -9,7 +9,7 @@ bot.help(ctx => {
 if (process.env.NODE_ENV === 'production') {
     bot.launch({
         webhook: {
-            domain: 'http:/your-app-name.herokuapp.com/',
+            domain: 'https://your-app-name.herokuapp.com/',
             port: parseInt(process.env.PORT || '3000')
         }
     })

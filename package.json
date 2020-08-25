@@ -2,7 +2,7 @@
   "name": "telegraf-heroku-typescript-template",
   "scripts": {
     "build": "ncc build src/index.ts -m",
-    "start": "NODE_ENV=production node dist/index.js",
+    "start": "NODE_ENV=production yarn node dist/index.js",
     "dev": "nodemon src/index.ts",
     "clean": "rimraf dist"
   },
