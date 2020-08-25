@@ -1,0 +1,21 @@
+{
+  "name": "telegraf-heroku-typescript-template",
+  "scripts": {
+    "build": "ncc build src/index.ts -m",
+    "start": "NODE_ENV=production node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "telegraf": "^3.38.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.6.0",
+    "@vercel/ncc": "^0.23.0",
+    "@yarnpkg/pnpify": "^2.1.0",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  }
+}
